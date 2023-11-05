@@ -11,8 +11,9 @@
             Udforsk vores guides, arrangementer og eksklusive studierabatter. ‍💻✨ </p>
         <button>Bliv gratis medlem</button>
     </div>
+    
     <div class="div_image">
-        <img class="image" src="studerende.png" alt="Insekternes Blik">
+        <img class="image" src="studerende.png" alt="Billede af studerende">
     </div >
     
 
@@ -24,8 +25,9 @@
 
 
 h1{
-    font-size: 20px;
-    margin-top: 3rem;
+    font-size: 40px;
+    margin-top: 10rem;
+    margin-left: 2rem;
     text-decoration: none;
     font-weight: 600;
     color: #000000;
@@ -41,9 +43,9 @@ h1{
     font-size: 16px;
     font-family: 'Poppins', sans-serif;
       font-weight: 300;
-      margin-left: 3rem;
+      margin-left: 2rem;
       line-height: 1.5;
-      padding: 0;
+      padding-right: 2rem;
  }
 
 
@@ -51,12 +53,11 @@ h1{
 /* Images */
 
   .image {
-
     object-fit: cover;
     width: 100%;
-    padding: 5rem;
-}
-
+    padding: 2rem;
+    z-index: 1;
+  }
 .arrow{
     width: 7%;
   margin: 0;
@@ -66,14 +67,31 @@ h1{
 }
 
 .text{
-    /* margin-left: -3rem; */
     order: 2;
 }
 
+button{
+    background-color: transparent;
+    padding: 1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    margin-top: 1rem;
+    margin-left: 2rem;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+}
+
+article{
+    background-color: #e6e6de;
+}
 
 
 @media screen and (min-width: 768px) {
 
+    .image {
+        padding: ;
+        padding: 5rem;
+    }
    
     article {
     display:grid;
@@ -120,6 +138,8 @@ h2:hover{
 
  p{
     font-size: 22px;
+    margin-left: 3rem;
+    padding: 0;
    
 }
 .arrow{
