@@ -1,0 +1,154 @@
+---
+---
+
+<div class="grid1-1">
+<h2>
+    Aktiviteter
+</h2>
+<div>
+<button class="prev-btn">
+    <img src="/ArrowPrevious.svg" alt="Arrow previos">
+  </button>
+  <button class="next-btn">
+    <img src="/ArrowNext.svg" alt="Arrow next">
+  </button>
+</div>
+</div>
+
+<div class="slider-container">
+<div class="slider">
+    <div>
+    <img src="/course1.svg" alt="Image 1">
+    <h3>AI - Artificial Intelligens Kursus</h3>
+    <h4>Webinar</h4>
+</div>
+<div>
+    <img src="/course2.svg" alt="Image 2">
+    <h3>Scor' et studiejob</h3>
+    <h4>Webinar</h4>
+</div>
+<div>
+    <img src="/course3.svg" alt="Image 3">
+    <h3>LinkedIn - 4 simple tips til  <br>at optimere din profil</h3>
+    <h4>Webinar</h4>
+</div>
+</div>
+
+</div>
+
+<style>
+        @import url('https://fonts.cdnfonts.com/css/nexa-bold');
+    .grid1-1{
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+     h2{
+    font-size: 30px;
+    margin-top: 2rem;
+    margin-left: 2rem;
+    margin-bottom: 20;
+    text-decoration: none;
+    font-weight: 700;
+    color: #000000;
+    font-family: 'Nexa', sans-serif;
+      text-transform: none;
+      padding: 0;
+    
+  }
+  h3{
+    font-size: 25px;
+    margin-top: 2rem;
+    margin-left: 2rem;
+    margin-bottom: 20;
+    text-decoration: none;
+    font-weight: 700;
+    color: #000000;
+    font-family: 'Nexa', sans-serif;
+      text-transform: none;
+      padding: 0;
+  }
+  h4{
+    font-size: 25px;
+    margin-top: 1rem;
+    margin-left: 2rem;
+    margin-bottom: 20;
+    text-decoration: none;
+    font-weight: 200;
+    color: #000000;
+    font-family: 'Nexa', sans-serif;
+  }
+
+ .slider-container {
+            position: relative;
+            width: 100%;
+            max-width: 1700px; /* Adjust the width as needed */
+            overflow: hidden;
+            margin-bottom: 30px;
+            margin-left: 2rem;
+        }
+.slider {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slider img {
+    width: 100%;
+    height: auto;
+    padding-left: 20px;
+}
+button.prev-btn2,
+        button.next-btn2 {
+            position: absolute;
+            top: 30%;
+            transform: translateY(-50%);
+            background: none;
+            border: none;
+            font-size: 24px;
+            cursor: pointer;
+        }
+
+    @media screen and (min-width: 768px) {
+    h2{
+        font-size: 35px;
+    margin-left: 4rem;
+    margin-top: 7rem;
+    font-weight: 600;
+    margin-bottom: 30;  
+}
+.prev-btn2 img,
+.next-btn2 img {
+    width: 100%;
+    height: 100%;
+}}
+</style>
+
+<script>
+         
+    const slider = document.querySelector('.slider');
+    const prevBtn = document.querySelector('.prev-btn');
+    const nextBtn = document.querySelector('.next-btn');
+    
+    let currentIndex = 0;
+    
+    function slideTo(index) {
+        const slideWidth2 = slider.clientWidth;
+        const offset2 = -index * slideWidth2;
+        slider.style.transform = `translateX(${offset2}px)`;
+    }
+    
+    function prevSlide() {
+        currentIndex = (currentIndex - 1 + slider.childElementCount) % slider.childElementCount;
+        slideTo(currentIndex);
+    }
+    
+    function nextSlide() {
+        currentIndex = (currentIndex + 1) % slider.childElementCount;
+        slideTo(currentIndex);
+    }
+    
+    prevBtn.addEventListener('click', prevSlide);
+    nextBtn.addEventListener('click', nextSlide);
+    
+    
+    </script>
