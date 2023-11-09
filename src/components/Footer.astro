@@ -16,90 +16,74 @@
     </div> 
 
     <div>
-      <p><a href="#">Telefon hverdage 8.30-15.00</a></p>
-      <p><a href="#">3314 9045</a></p>
-      <p><a href="#">Send en besked</a></p>
+      <p><a href="#">Telefon</a></p>
+      <p><a href="#">Hverdage kl. 08.30-15.00</a></p>
+      <p><a href="#">Tlf: 3314 9045</a></p>
+      <p><a href="#">Send en mail</a></p>
     </div> 
 
     <div>
-      <p><a href="#">Facebook</a></p>
-      <p><a href="#">LinkedIn</a></p>
-      <p><a href="#">Instagram</a></p>
-      <p><a href="#">TikTok</a></p>
+      <p><a class="SoMe" href="#">Facebook</a></p>
+      <p><a class="SoMe" href="#">LinkedIn</a></p>
+      <p><a class="SoMe" href="#">Instagram</a></p>
+      <p><a class="SoMe"  href="#">TikTok</a></p>
     </div>
-     <div class="flexbox">
-    <img src="/hjul.svg" alt="hjul">
-  </div>
+     
   </div>
 
  
 </footer>
 
-
-
-
-</div>
-</footer>
 
 <style>
 .grid-5 {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  gap: 3.5rem;
 }
 
-.pilop{
-  margin-left: 110px;
-  margin-top: 20px;
-}
 
-.wrapper {
-  display: grid;
-  
-}
 
     footer{
-        align-items: start;
+      height: 80vh;
       background: #8AFF9D;
       padding: 0.5rem;
-      
       z-index: -1;
-
+      padding: 90px 46px 87px 57px;
     }
+
+  
+    
   
 
     p{
-        z-index: 1;
+    z-index: 1;
     font-size: 18px;
-    margin-top: 3rem;
-    margin-left: 2rem;
-    margin-bottom: 20;
     text-decoration: none;
     font-weight: 200;
     color: #000000;
     font-family: 'Nexabold', sans-serif;
       padding: 0;
+      
 
    
       
 }
 
-.flexbox{
-  margin-top: 30px;
- 
-}
-.p_left{
-    z-index: 1;
-        font-size: 18px;
-         font-family: 'Nexabold', sans-serif;
-        margin-bottom: 0;
-        
-   
-       
-}
-
 a{
     color: #000000;
     text-decoration: none;
+}
+
+.SoMe{
+  color: #000000;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.SoMe:hover{
+  color: #ffffff;
+
 }
 a:hover {
 color: #ffffff;
@@ -110,76 +94,20 @@ text-decoration: none;}
 
       .grid-5 {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-}
-      .pilop{
-margin-left: 600px;
-}
-.pilop:hover{
-  transform: scale(1.1);
-}
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  
+      }
+
   footer{
-    height: 100vh;
+    height: 20vh;
     padding: 90px 46px 87px 57px;
   }
 
-      .wrapper {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    margin-top: 0px;
-  }
-  .flexbox{
-    display: flex;
-    justify-content: end;
-    flex-direction: column;
-    margin-top: -100px;
-}
 
-  .logo{
-    display: block;
-    height: 150px;
-    width: 300px;
-    margin: 0;
-}
 
 p{
         font-size: 18px; 
 }
-
-.p_left{
-        font-size: 25px;
-    z-index: 1;
-        text-transform: uppercase;
-        font-family: Helvetica;
-        text-align: end;
-        margin-bottom: 0;
-}
-
-  .box-1{
-    display: grid;
-    grid-column-start: 1;
-    grid-column-end: 1;
-    grid-row-start: 1;
-    grid-row-end: 1;
-    z-index: 1;
-    margin-top: 6rem;
-  }
-  .box-2 {
-    display: grid;
-    grid-column-start: 2;
-    grid-column-end: 2;
-    grid-row-start: 1;
-    grid-row-end: 1;
-    z-index: 1;
-    margin-top: 4rem;
-  }
-
-  h1{
-    font-size: 65px;
-    
-      margin-top: 0;
-      margin-bottom: 0;
-  }
 
   p a:hover{
     color: #ffffff;
@@ -192,7 +120,7 @@ p{
 
 footer {
     margin: 0 auto;
-    height: 90vh;
+    height: 40vh;
 }
 
 .pilop{
