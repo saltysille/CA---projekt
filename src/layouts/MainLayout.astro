@@ -25,7 +25,13 @@ const {title} = Astro.props;
 	<body id="op">
         <Nav/>
 
+		<div class="logo-container" id="logo-container">
+			<img src="/gratislogo.png" alt="Your Logo">
+		  </div>
+
 		<main >
+
+			
 
             <slot />
 
@@ -36,7 +42,38 @@ const {title} = Astro.props;
 	</body>
 </html>
 
+<style>
+	.logo-container {
+  float: right;
+}
 
+.logo-container img {
+  max-width: 100%;
+  height: auto;
+  transition: max-width 0.3s ease;
+}
+
+.logo-container.sticky {
+  max-width: 50px; /* Adjust the size when the logo becomes sticky */
+}
+</style>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+	var logoContainer = document.getElementById("logo-container");
+	var body = document.body;
+	var bodyHeight = body.clientHeight;
+  
+	window.addEventListener("scroll", function () {
+	  if (window.pageYOffset > bodyHeight) {
+		logoContainer.classList.add("sticky");
+	  } else {
+		logoContainer.classList.remove("sticky");
+	  }
+	});
+  });
+
+</script>
 
 
 
