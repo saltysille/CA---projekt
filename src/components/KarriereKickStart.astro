@@ -3,7 +3,19 @@
 
 <div class="background">
 
-<h2>KarriereKickstart</h2>
+    <div class="grid1-2">
+        <h2>
+KarriereKickStart
+        </h2>
+        <div>
+        <button class="prev-btn">
+            <img src="/ArrowPrevious.svg" alt="Arrow previos">
+          </button>
+          <button class="next-btn">
+            <img src="/arrow1.svg" alt="Arrow next">
+          </button>
+        </div>
+        </div>
 
 <article>
     
@@ -49,6 +61,35 @@ img{
 }
 
 
+button.prev-btn,
+button.next-btn {
+    position: absolute;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    margin-top: 3rem;
+}
+
+.prev-btn img,
+.next-btn img {
+    width: 50%;
+    height: 20%;
+}
+
+
+button.prev-btn {
+    left: 87%;
+    
+    
+}
+
+button.next-btn {
+    right: 4%;
+    
+}
+
 .image {
     object-fit: cover;
     width: 100%;
@@ -76,21 +117,25 @@ img{
 }
 
 
-  @media screen and (min-width: 768px) {
+ 
 
-    img{
+    @media screen and (min-width: 768px) {
+
+        img{
         padding: 4rem;
         margin-bottom: 3rem;
         margin-top: 3rem;
 
+    }        .grid1-2{
+        display:grid;
+        grid-template-columns: 1fr 1fr;
     }
     h2{
         font-size: 35px;
     margin-left: 4rem;
-    margin-top: 7rem;
+    /* margin-top: 7rem; */
     font-weight: 600;
-    margin-bottom: 0;
-    
+    margin-bottom: 30;  
 }
 
 article {

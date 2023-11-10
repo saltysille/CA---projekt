@@ -5,17 +5,18 @@
 
 
 <article>
+    <div class="grid">
     <div class="text"> 
         <h1>For studerende</h2>
-        <p> Som studerende får du gratis adgang til vores medlemsfordele, der giver dig et forspring i karrieren. Få personlig rådgivning om studiejobs, kurser, løn og faglige events. 
+        <p> Som studerende får du <strong>gratis</strong> adgang til vores medlemsfordele, der giver dig et forspring i karrieren. Få personlig rådgivning om studiejobs, kurser, løn og faglige events. 
             Udforsk vores guides, arrangementer og eksklusive studierabatter. ‍💻✨ </p>
         <button>Bliv gratis medlem</button>
     </div>
     
-    <div class="div_image">
+    <div >
         <img class="image" src="/billede1.webp" alt="Billede af studerende">
     </div >
-    
+</div>
 
 </article>
 
@@ -23,7 +24,9 @@
 
 @import url('https://fonts.cdnfonts.com/css/nexa-bold');
 
-
+strong{
+    font-weight: 700;
+}
 h1{
     font-size: 40px;
     margin-top: 11rem;
@@ -52,16 +55,10 @@ h1{
 
 /* Images */
 
-  .image {
-    object-fit: cover;
-    width: 80%;
-    padding: 2rem;
-    z-index: 1;
-  }
-
-
-.text{
-    order: 2;
+.image{
+width: 90%;
+margin-left: 2rem;
+margin-top: 2rem;
 
 }
 
@@ -75,6 +72,8 @@ button{
     font-family: 'Nexa', sans-serif;
     font-weight: 700;
     font-size: 14px;
+    border: 2px solid #000; /* You can adjust the border width and color */
+
 }
 
 article{
@@ -89,23 +88,18 @@ article{
 
  
    
-    article {
+    .grid{
     display:grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr ;
     gap: 0;
     margin-bottom: 5rem;
+    gap: 3rem;
 }
-article .div_image {
-    grid-column: span 2;
 
-}
-article:nth-child(even) .div_image{
-    order: 2;
-}
    h1{
     font-size: 50px;
     margin-top: 20rem;
-    margin-left: 3rem;
+    margin-left: 4rem;
 }
 
 h2{
@@ -124,18 +118,21 @@ h2:hover{
  
 
  .image {
-    grid-column: span 2; 
-    display: block;
-    margin-top: 8rem;
-    margin-left: 10rem;
+    object-fit: cover;
+    width: 92%;
+    height: 75%;
+margin-top: 12rem;
+margin-right: 3rem;
+margin-bottom: 10rem;
 }
 
  p{
     font-size: 22px;
-    margin-left: 3rem;
+    margin-left: 4rem;
     padding: 0;
    
 }
+
 .arrow{
     width: 7%;
     margin-left: 15rem;
@@ -151,11 +148,16 @@ button{
     padding-left: 4rem;
     padding-right: 4rem;
     margin-top: 5rem;
-    margin-left: 3rem;
+    margin-left: 4rem;
     font-family: 'Nexa', sans-serif;
     font-size: 24px;
-}
+    margin-bottom: 7rem;
+    border: 2px solid #000; /* You can adjust the border width and color */
 
+}
+button:hover {
+        color: #8AFF9D;
+    }
 }
 
 
