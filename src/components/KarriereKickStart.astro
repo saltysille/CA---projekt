@@ -1,0 +1,156 @@
+---
+---
+
+<div class="background">
+
+    <div class="grid1-2">
+        <h2>
+KarriereKickStart
+        </h2>
+        <div>
+        <button class="prev-btn">
+            <img src="/ArrowPrevious.svg" alt="Arrow previos">
+          </button>
+          <button class="next-btn">
+            <img src="/arrow1.svg" alt="Arrow next">
+          </button>
+        </div>
+        </div>
+
+<article>
+    
+    <div>
+        <a href="https://youtube.com/playlist?list=PLCI30YlzGi4N5AVy3ixrq_zSPm5o---UX&si=cZXMS_kbLkfUIFTk"> <img class="image" src="/studietips.webp" alt="Studietips og råd"></a>
+       
+    </div>
+
+    <div>
+        <a href="https://youtube.com/playlist?list=PLCI30YlzGi4N5AVy3ixrq_zSPm5o---UX&si=cZXMS_kbLkfUIFTk">  <img class="image" src="/studierabatter.webp" alt="studierabatter medlemskab"></a>
+      
+    </div>
+
+    <div>
+        <a href="https://youtube.com/playlist?list=PLCI30YlzGi4N5AVy3ixrq_zSPm5o---UX&si=cZXMS_kbLkfUIFTk">        <img class="image" src="/laesesale.webp" alt="tip og råd til læsesale på CBS, KU, Biblioteker"></a>
+
+    </div>
+
+</article>
+
+</div>
+
+<section>
+
+    <picture>
+        <source media="(max-width: 600px)" srcset="/future-focus.webp" />
+        <source media="(min-width: 601px)" srcset="/future-focus.webp" />
+        <img src="/future-focus.webp" alt="Kampagnepost - Your future our focus" />
+    </picture>
+
+</section>
+
+<style>
+
+@import url('https://fonts.cdnfonts.com/css/nexa-bold');
+
+img{
+    width: 100%;
+    margin-bottom: 1rem;
+        margin-top: 1rem;
+        padding: 1rem 2rem;
+        padding-top: 0;
+        object-fit: cover;
+    
+    
+}
+
+
+button.prev-btn,
+button.next-btn {
+    position: absolute;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    margin-top: 3rem;
+}
+
+.prev-btn img,
+.next-btn img {
+    width: 50%;
+    height: 20%;
+}
+
+
+button.prev-btn {
+    left: 87%;
+    
+    
+}
+
+button.next-btn {
+    right: 4%;
+    
+}
+
+.image {
+    object-fit: cover;
+    width: 100%;
+    padding: 1rem 2rem;
+    padding-top: 0;
+  }
+
+  h2{
+    
+    font-size: 30px;
+    margin-top: 2rem;
+    margin-left: 2rem;
+    margin-bottom: 0;
+    text-decoration: none;
+    font-weight: 600;
+    color: #000000;
+    font-family: 'Nexa', sans-serif;
+      font-weight: 500;
+      text-transform: none;
+      padding: 0;
+    
+  }
+.background-color{
+    background-color: #FFFFFF;
+}
+
+
+ 
+
+    @media screen and (min-width: 768px) {
+
+        img{
+        padding: 4rem;
+        margin-bottom: 3rem;
+        margin-top: 3rem;
+
+    }        .grid1-2{
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    h2{
+        font-size: 35px;
+    margin-left: 4rem;
+    /* margin-top: 7rem; */
+    font-weight: 600;
+    margin-bottom: 30;  
+}
+
+article {
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 0;
+    margin-top: 0;
+    margin-left: 30px;
+    margin-right:30px ;
+    margin-bottom: 0;
+}
+
+  }
+
+</style>

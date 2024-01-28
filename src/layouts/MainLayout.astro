@@ -1,0 +1,73 @@
+---
+import Nav from "../components/Nav.astro";
+import "../styles/main.css"
+import "../styles/normalize.css"
+import Footer from "../components/Footer.astro";
+
+const {title} = Astro.props;
+---
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="generator" content={Astro.generator} />
+		
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap" rel="stylesheet">
+<meta name="description" content="Få ekspertrådgivning i karriere og uddannelse. Studiejob, billig forsikring, rabat og advokathjælp for en succesfuld studietid og fremtidssikring. ">
+		<title>{title}</title>
+
+	</head>
+	<body id="op">
+        <Nav/>
+
+
+		<main >
+
+<div>
+<a href="#">
+	<img id="stickyImage" src="/gratislogo.png" alt="gratis logo">
+</a>
+</div>
+            <slot />
+
+		</main>
+		
+			<Footer/>
+
+	</body>
+</html>
+
+<style>
+	body {
+    margin: 0;
+    padding: 0;
+}
+#stickyImage {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    margin: 20px;
+    width: 10%;
+    animation: spin 6s linear infinite; /* Adjust the duration as needed */
+	z-index: 99;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+</style>
+
+
+
+
+
+
+
+
