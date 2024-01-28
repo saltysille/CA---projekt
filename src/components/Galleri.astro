@@ -1,0 +1,75 @@
+---
+---
+<main>
+<div class="teksttop">
+<p>Elfrida paints figurative large scale oil paintings. the paintings often illustrate fabric, architectural surfaces and creatures. spands from realism to abstraction
+
+<a href="/pages/about.astro">More about</a>
+</div>
+
+<article>
+    
+    <div>
+        <img class="image" src="src/imgs/halloween.webp" alt="halloween">
+        <p class="image_text">halloween, 2023 oil on canvas 86 x 80cm</p>
+    </div>
+
+    <div>
+        <img class="image" src="src/imgs/christmas.webp" alt="christmas">
+    </div>
+
+      <div>
+        <img class="image" src="src/imgs/bags.webp" alt="bags">
+    </div>
+     <div>
+        <img class="image" src="src/imgs/easter.webp" alt="easter">
+    </div>
+
+    <div>
+        <img class="image" src="src/imgs/heart.webp" alt="heart">
+    </div>
+
+    <div>
+        <img class="image" src="src/imgs/rolled.webp" alt="rolled">
+    </div>
+
+    <div>
+        <img class="image" src="src/imgs/wall.webp" alt="wall">
+    </div>
+
+    
+</article>
+
+</div>
+</main>
+
+<style>
+
+.image {
+    object-fit: cover;
+    width: 100%;}
+
+.teksttop
+{max-width: 300px;}
+
+  @media screen and (max-width: 767px) {
+    .teksttop
+{max-width: 250px;}
+  }
+
+  article {
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0;
+}
+
+  @media screen and (min-width: 768px) {
+
+article {
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+  }
+
+</style>

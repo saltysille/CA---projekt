@@ -1,196 +1,138 @@
-
+<<<<<<< HEAD
+<main>
 <footer id="footer">
-  <div class="grid-pil">
-  <div class="p-stor">
-    <p><a href="#">FOR KUNSTNERE</a></p>
-    <p><a href="#">STØT COPENHAGEN LIGHT FESTIVAL</a></p>
-    <p><a href="#">NYHEDSBREV</a></p>
-    <p> <a href="#">PRESSE</a></p>
-    <p><a href="#">SPONSORE</a></p> 
-  </div> 
-
-  <div class="pilop">
-    <a href="#op"><img src="/pilfooter.svg" alt="pilop"></a>
-  </div>
-
-</div>
-
-
-<div class="flexbox">
-
-    <p class="p_left"><a href="https://www.instagram.com/cphlightfest/">Instagram</a></p>
-    <p class="p_left"><a href="https://www.facebook.com/CopenhagenLightFestivalLive">Facebook</a></p>
-    <p class="p_left">DA /<span id="en"> En</span></p>
-
-</div>
-
-<div class="wrapper">
-
-    <div class="box-1">
-        <a href="/index.html"><img class="logo" src="/logo2.png" alt="logo"></a>
-    </div>
-
-    <div class="box-2">
-    <p class="p_left">  <a href="mailto: info@copenhagenlightfestival.org">info@copenhagenlightfestival.org</a></p>
-    <p class="p_left">
-      <a href="tel:+45 25 55 66 04">Tlf. +45 25 55 66 04</a></p>
-    <p class="p_left">(C) COPENHAGEN LIGHT FESTIVAL 2023</p>
-</div>
-</div>
-
+<p>mail: xxx@222222.com  instagram: @xxxxxxx</p>
 
 </footer>
-
+</main>
 <style>
-.grid-pil{
-display: grid;
-grid-template-columns: 1fr 1fr;
-}
-.pilop{
-  margin-left: 110px;
-  margin-top: 20px;
-}
-.logo{
-    display: block;
-    width: 30%;
-    margin-top: 25px;
-}
-.wrapper {
-  display: grid;
-  
-}
-
-    footer{
-        align-items: start;
-      background: #8AFF9D;
-      padding: 0.5rem;
-      
-      z-index: -1;
-
-    }
-    .p-stor{
-      font-size: 18px;
-    }
-
     p{
         z-index: 1;
-        color: #FFF;
-        font-size: 20px;
-        text-transform: uppercase;
+        color: hsla(0, 0%, 0%, 0.95);
+        font-size: 14px;
         font-family: Helvetica;
-   
-      
 }
 
-.flexbox{
-  margin-top: 30px;
+    @media screen and (min-width: 768px)
+
+@media screen and (min-width: 1440px) {
+=======
+<footer id="footer">
+  <div class="grid-5">
+    <div>
+      <p><a href="#">Om CA</a></p>
+      <p><a href="#">Kontakt</a></p>
+      <p><a href="#">Nyheder</a></p>
+      <p><a href="#">Nyhedsbrev</a></p>
+      <p><a href="#">Studiepartner</a></p> 
+    </div> 
+
+    <div>
+      <p><a href="#">Instant feedback</a></p>
+      <p><a href="#">Løntjek</a></p>
+      <p><a href="#">Persondatapolitik</a></p>
+      <p><a href="#">Cookiepolitik</a></p>
+    </div> 
+
+    <div>
+      <p><a href="#">Telefon</a></p>
+      <p><a href="#">Hverdage kl. 08.30-15.00</a></p>
+      <p><a href="#">Tlf: 3314 9045</a></p>
+      <p><a href="#">Mail: akasse@ca.dk</a></p>
+    </div> 
+
+    <div>
+      <p><a class="SoMe" href="#">Facebook</a></p>
+      <p><a class="SoMe" href="#">LinkedIn</a></p>
+      <p><a class="SoMe" href="#">Instagram</a></p>
+      <p><a class="SoMe"  href="#">TikTok</a></p>
+    </div>
+     
+  </div>
+
  
+</footer>
+
+
+<style>
+  @import url('https://fonts.cdnfonts.com/css/nexa-bold');
+
+.grid-5 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3.5rem;
 }
-.p_left{
+
+
+
+    footer{
+      height: 80vh;
+      background: #8AFF9D;
+      padding: 0.5rem;
+      z-index: -1;
+      padding: 90px 46px 87px 57px;
+    }
+
+  
+    
+  
+
+    p{
     z-index: 1;
-        font-size: 15px;
-        text-transform: uppercase;
-        font-family: Helvetica;
-        margin-bottom: 0;
-        
+    font-size: 18px;
+    text-decoration: none;
+    font-weight: 200;
+    color: #000000;
+    font-family: 'Nexabold', sans-serif;
+      padding: 0;
+      
+
    
-       
+      
 }
 
 a{
-    color: #FFFEFE;
+    color: #000000;
     text-decoration: none;
 }
 
-.p_left a:hover{
-    color: #707070;
+.SoMe{
+  color: #000000;
+    text-decoration: none;
+    font-weight: 500;
 }
 
+.SoMe:hover{
+  color: #ffffff;
 
-    #en{
-        color: #707070;
-      font-family: 'Lexend';
-      margin-left: 12px;
-      margin-top: 0.5rem;
-      text-transform: uppercase;
-        font-family: Helvetica;
-
-    }
+}
+a:hover {
+color: #ffffff;
+text-decoration: none;}
 
 
     @media screen and (min-width: 768px){
-      .pilop{
-margin-left: 600px;
-}
-.pilop:hover{
-  transform: scale(1.1);
-}
+
+      .grid-5 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  
+      }
+
   footer{
-    height: 100vh;
+    height: 20vh;
     padding: 90px 46px 87px 57px;
   }
 
-      .wrapper {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    margin-top: 0px;
-  }
-  .flexbox{
-    display: flex;
-    justify-content: end;
-    flex-direction: column;
-    margin-top: -100px;
-}
 
-  .logo{
-    display: block;
-    height: 150px;
-    width: 300px;
-    margin: 0;
-}
 
 p{
-        font-size: 30px; 
+        font-size: 18px; 
 }
-
-.p_left{
-        font-size: 25px;
-    z-index: 1;
-        text-transform: uppercase;
-        font-family: Helvetica;
-        text-align: end;
-        margin-bottom: 0;
-}
-
-  .box-1{
-    display: grid;
-    grid-column-start: 1;
-    grid-column-end: 1;
-    grid-row-start: 1;
-    grid-row-end: 1;
-    z-index: 1;
-    margin-top: 6rem;
-  }
-  .box-2 {
-    display: grid;
-    grid-column-start: 2;
-    grid-column-end: 2;
-    grid-row-start: 1;
-    grid-row-end: 1;
-    z-index: 1;
-    margin-top: 4rem;
-  }
-
-  h1{
-    font-size: 65px;
-    
-      margin-top: 0;
-      margin-bottom: 0;
-  }
 
   p a:hover{
-    color: #707070;
-    text-decoration: underline;
+    color: #ffffff;
+    text-decoration: none;
 }
 
 }
@@ -199,13 +141,14 @@ p{
 
 footer {
     margin: 0 auto;
-    height: 90vh;
+    height: 36vh;
 }
 
 .pilop{
 margin-left: 800px;
 }
 
+>>>>>>> 1e3dc0cc23fe76bf2a4dcf13cc8c7373b2245de0
 }
 
        

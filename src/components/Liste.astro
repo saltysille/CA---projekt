@@ -5,34 +5,37 @@
 
 
 <article>
+    <div class="grid">
     <div class="text"> 
         <h1>For studerende</h2>
-        <p> Som studerende får du gratis adgang til vores medlemsfordele, der giver dig et forspring i karrieren. Få personlig rådgivning om studiejobs, kurser, løn og faglige events. 
+        <p> Som studerende får du <strong>gratis</strong> adgang til vores medlemsfordele, der giver dig et forspring i karrieren. Få personlig rådgivning om studiejobs, kurser, løn og faglige events. 
             Udforsk vores guides, arrangementer og eksklusive studierabatter. ‍💻✨ </p>
         <button>Bliv gratis medlem</button>
     </div>
     
-    <div class="div_image">
-        <img class="image" src="studerende.png" alt="Billede af studerende">
+    <div >
+        <img class="image" src="/billede1.webp" alt="studieliv, studiegruppe, studierabatter">
     </div >
-    
+</div>
 
 </article>
 
 <style>
 
+@import url('https://fonts.cdnfonts.com/css/nexa-bold');
 
-
-
+strong{
+    font-weight: 700;
+}
 h1{
     font-size: 40px;
-    margin-top: 10rem;
+    margin-top: 11rem;
     margin-left: 2rem;
     text-decoration: none;
     font-weight: 600;
     color: #000000;
-    font-family: 'Poppins', sans-serif;
-      font-weight: 500;
+    font-family: 'Nexa', sans-serif;
+      font-weight: 600;
       text-transform: none;
       padding: 0;
     
@@ -41,7 +44,7 @@ h1{
  p{
     color: #000000;
     font-size: 16px;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Nexa', sans-serif;
       font-weight: 300;
       margin-left: 2rem;
       line-height: 1.5;
@@ -52,22 +55,11 @@ h1{
 
 /* Images */
 
-  .image {
-    object-fit: cover;
-    width: 100%;
-    padding: 2rem;
-    z-index: 1;
-  }
-.arrow{
-    width: 7%;
-  margin: 0;
-  margin-left: 18rem ;
-  margin-bottom: 3rem;
-    
-}
+.image{
+width: 90%;
+margin-left: 2rem;
+margin-top: 2rem;
 
-.text{
-    order: 2;
 }
 
 button{
@@ -77,48 +69,44 @@ button{
     padding-right: 2rem;
     margin-top: 1rem;
     margin-left: 2rem;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Nexa', sans-serif;
+    font-weight: 700;
     font-size: 14px;
+    border: 2px solid #000; /* You can adjust the border width and color */
+
 }
 
 article{
-    background-color: #e6e6de;
+    background-color: #F9F9F3;
+    margin-left: 0;
+    margin-right:0;
+    margin-top: -3rem;
 }
 
 
 @media screen and (min-width: 768px) {
 
-    .image {
-        padding: ;
-        padding: 5rem;
-    }
+ 
    
-    article {
+    .grid{
     display:grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr ;
     gap: 0;
-    margin-top: 1rem;
-    margin-left: 30px;
-    margin-right:30px ;
     margin-bottom: 5rem;
+    gap: 3rem;
 }
-article .div_image {
-    grid-column: span 2;
 
-}
-article:nth-child(odd) .div_image{
-    order: 2;
-}
    h1{
     font-size: 50px;
-    margin-top: 25rem;
-    margin-left: 3rem;
+    margin-top: 20rem;
+    margin-left: 4rem;
 }
 
 h2{
     font-size: 30px;
     margin-left: 0;
     margin-top: 13rem;
+    font-weight: 600;
     font-weight: 600;
     
 }
@@ -130,18 +118,21 @@ h2:hover{
  
 
  .image {
-    grid-column: span 2; 
-    display: block;
-    margin-top: 10rem;
-    margin-left: 3.3rem;
+    object-fit: cover;
+    width: 92%;
+    height: 75%;
+margin-top: 12rem;
+margin-right: 3rem;
+margin-bottom: 10rem;
 }
 
  p{
     font-size: 22px;
-    margin-left: 3rem;
+    margin-left: 4rem;
     padding: 0;
    
 }
+
 .arrow{
     width: 7%;
     margin-left: 15rem;
@@ -157,11 +148,16 @@ button{
     padding-left: 4rem;
     padding-right: 4rem;
     margin-top: 5rem;
-    margin-left: 3rem;
-    font-family: 'Poppins', sans-serif;
+    margin-left: 4rem;
+    font-family: 'Nexa', sans-serif;
     font-size: 24px;
-}
+    margin-bottom: 7rem;
+    border: 2px solid #000; /* You can adjust the border width and color */
 
+}
+button:hover {
+        color: #8AFF9D;
+    }
 }
 
 
